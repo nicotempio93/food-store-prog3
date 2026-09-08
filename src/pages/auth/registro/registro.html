@@ -1,14 +1,20 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Registro</title>
+  </head>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-
-<body>
+  <body>
     <h1>Hola desde el registro</h1>
-</body>
-
+    <form id="formulario-registro">
+      <label for="email">Email</label>
+      <input type="email" name="email" id="email" />
+      <label for="pass">Password</label>
+      <input type="password" name="pass" id="pass" />
+      <button id="btn-registro">Enviar</button>
+    </form>
+    <script src="./registro.ts" type="module"></script>
+  </body>
 </html>
