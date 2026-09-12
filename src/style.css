@@ -1,0 +1,17 @@
+#contenedor-productos {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+  border: 1px solid #ccc;
+}
+
+.producto {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: center;
+}
+
+img.producto-imagen {
+    width: 100%;
+    height: auto;
+}

@@ -3,13 +3,27 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <link rel="stylesheet" href="/src/style.css" />
+    <title>Food store - Nicolas Tempio</title>
   </head>
 
   <body>
-    <h1>Hola desde el cliente</h1>
-    <button id="logoutButton">Logout</button>
-    <script type="module" src="./home.ts"></script>
+    <header>
+      <h1>Food store de Nico</h1>
+      <nav>
+        <a href="../cart/cart.html">Carrito</a>
+      </nav>
+    </header>
+    <aside>
+      <ul id="categorias" class="displayCat"></ul>
+    </aside>
+    <section>
+      <div id="inputBusqueda" class="barraBusqueda">
+        <input class="busqueda" type="text" placeholder="Buscar producto..." />
+      </div>
+      <div id="contenedor-productos" class="productos"></div>
+    </section>
     <script type="module" src="/src/main.ts"></script>
+    <script type="module" src="home.ts"></script>
   </body>
 </html>
