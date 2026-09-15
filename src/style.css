@@ -1,3 +1,7 @@
+* {
+  font-family: Arial, sans-serif;
+}
+
 #contenedor-productos {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
@@ -6,12 +10,35 @@
 }
 
 .producto {
-    border: 1px solid #ccc;
-    padding: 10px;
-    text-align: center;
+  border: 1px solid #ccc;
+  padding: 10px;
+  text-align: center;
 }
 
 img.producto-imagen {
-    width: 100%;
-    height: auto;
+  width: 100%;
+  height: auto;
+}
+
+.producto-carrito {
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  align-items: center;
+  gap: 10px;
+  border: 1px solid #ccc;
+}
+
+#total-carrito {
+  display: flex;
+  font-weight: bold;
+  margin-top: 20px;
+  justify-content: end;
+}
+
+.producto-subtotal {
+  display: flex;
+  justify-content: end;
+  margin-left: auto;
+  font-weight: bold;
 }

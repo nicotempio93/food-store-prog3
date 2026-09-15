@@ -39,3 +39,4 @@ export const updateQuantity = (itemId: number, quantity: number): void => {
     localStorage.setItem("cart", JSON.stringify(cartItems));
   }
 };
+
