@@ -35,6 +35,10 @@ const renderizarProductos = (productos: IProduct[]) => {
       const botonAgregar = div.querySelector(".producto-boton");
       botonAgregar?.addEventListener("click", () => {
         addCartItem(producto);
+        botonAgregar.textContent = "✅ Agregado";
+        setTimeout(() => {
+          botonAgregar.textContent = "Agregar al carrito";
+        }, 1500);
       });
       contenedorProductos?.appendChild(div);
     });
