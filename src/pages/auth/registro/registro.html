@@ -1,20 +1,43 @@
 <!doctype html>
-<html lang="en">
+<html lang="es">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Registro</title>
+    <link rel="stylesheet" href="/src/style.css" />
+    <title>Registro - Nicolino's Food-Store</title>
   </head>
 
   <body>
-    <h1>Hola desde el registro</h1>
-    <form id="formulario-registro">
-      <label for="email">Email</label>
-      <input type="email" name="email" id="email" />
-      <label for="pass">Password</label>
-      <input type="password" name="pass" id="pass" />
-      <button id="btn-registro">Enviar</button>
-    </form>
+    <section class="form-section">
+      <h1>Crear cuenta</h1>
+      <form id="formulario-registro">
+        <div>
+          <label for="email">Email</label>
+          <input
+            type="email"
+            name="email"
+            id="email"
+            autocomplete="off"
+            placeholder="example@example.com"
+          />
+        </div>
+        <div>
+          <label for="pass">Password</label>
+          <input
+            type="password"
+            name="pass"
+            id="pass"
+            autocomplete="off"
+            placeholder="********"
+          />
+        </div>
+
+        <button id="btn-registro" type="submit">Registrarme</button>
+      </form>
+      <a class="form-link" href="/src/pages/auth/login/login.html"
+        >Ya tengo cuenta, ir al login</a
+      >
+    </section>
     <script src="./registro.ts" type="module"></script>
   </body>
 </html>
